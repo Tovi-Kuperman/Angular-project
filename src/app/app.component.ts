@@ -14,15 +14,16 @@ import { HeaderComponent } from './components/header/header.component';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
+
 isLoggedIn():boolean {
-  const currentUser = localStorage.getItem('currentUser');
+  const currentUser = sessionStorage.getItem('currentUser');
   return !!currentUser && JSON.parse(currentUser).userName;
 }
   title = 'gym';
    constructor(private router: Router) {}
 
   logout() {
-    localStorage.removeItem('currentUser');
+    sessionStorage.removeItem('currentUser');
     this.router.navigate(['/login']);
   }
   showLogout(): boolean {

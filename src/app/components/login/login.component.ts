@@ -36,7 +36,7 @@ export class LoginComponent implements OnInit {
       role: user.role,
       name: user.name
 };
-localStorage.setItem('currentUser', JSON.stringify(currentUser));
+sessionStorage.setItem('currentUser', JSON.stringify(currentUser));
 
     } else {
       this.formMessage = 'שם משתמש או סיסמה שגויים';
