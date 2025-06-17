@@ -1,0 +1,49 @@
+:host {
+  display: block;
+  direction: rtl;
+  font-family: rubik, Arial, sans-serif;
+}
+
+mat-dialog-content p {
+  font-size: large;
+  font-family: rubik;
+  margin: 8px 0;
+  color: #333;
+}
+
+mat-dialog-title {
+  color: rgb(241, 0, 112);
+  font-size: x-large;
+  font-family: rubik;
+  font-weight: bold;
+  margin-bottom: 12px;
+  text-align: right;
+}
+
+mat-dialog-content {
+  background: #fff0f6;
+  border-radius: 12px;
+  padding: 16px 8px;
+}
+
+mat-dialog-actions {
+  margin-top: 16px;
+  text-align: left;
+}
+
+button[mat-dialog-close] {
+  background: linear-gradient(90deg, #f70056 0%, #fa8484 100%);
+  color: #fff;
+  font-family: rubik;
+  font-weight: bold;
+  border-radius: 24px;
+  padding: 8px 24px;
+  box-shadow: 0 2px 8px rgba(241, 0, 112, 0.08);
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+button[mat-dialog-close]:hover {
+  background: linear-gradient(90deg, #fa8484 0%, #f70056 100%);
+  box-shadow: 0 4px 16px rgba(241, 0, 112, 0.18);
+  cursor: pointer;
+}

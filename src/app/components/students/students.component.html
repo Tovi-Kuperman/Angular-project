@@ -1,0 +1,18 @@
+<div dir="rtl">
+    <h1>רשימת תלמידות</h1>
+    <button class="reset-filters-btn" mat-raised-button color="primary" (click)="resetFilters()">
+  <mat-icon class="my-icon">refresh</mat-icon>
+  איפוס סינונים
+</button>
+
+ <ag-grid-angular
+  dir="rtl"
+  style="width: 100%; height: 500px;"
+  class="ag-theme-alpine"
+  [rowData]="rowData"
+  [rowClassRules]="rowClassRules"
+  [columnDefs]="columnDefs"
+  rowSelection="single"
+  [animateRows]="true">
+</ag-grid-angular>   
+</div>

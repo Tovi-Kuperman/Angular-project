@@ -1,0 +1,52 @@
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+.lesson-card {
+  width: 300px;
+}
+body {
+    direction: rtl;
+}
+p{
+    font-size: larger;
+    font-family: rubik;
+    font-weight: medium;
+}
+.title {
+    font-size: x-large;
+    font-family: rubik;
+    font-weight: bold;
+    color:  rgb(241, 0, 112);
+}
+.subtitle {
+    font-size: medium;
+    font-family: rubik;
+    font-weight: medium;
+    color:  rgb(250, 132, 132);
+}
+.galleryheader{
+    font-size: large;
+    font-family: rubik;
+    font-weight: bold;
+    color:  rgb(241, 0, 112);
+    text-align: center;
+    margin-bottom: 20px;
+}
+.lesson-card:hover{
+    background-color: #ffdada;  
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.active-lesson {
+  border: 2px solid #f70056;
+  /* background-color: #e8f5e9; */
+}
+
+.my-icon{
+    color:  #f70056;
+}

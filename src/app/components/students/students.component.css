@@ -1,0 +1,85 @@
+.ag-theme-alpine {
+  direction: rtl;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.ag-theme-alpine .ag-header-cell-label {
+  justify-content: flex-end;
+}
+.ag-theme-alpine .ag-cell {
+  text-align: right;
+}
+body{
+      direction: rtl !important;
+}
+h1 {
+    font-size: x-large;
+    font-family: rubik;
+    font-weight: bold;
+    color:  rgb(241, 0, 112);
+    text-align: center;
+}
+.ag-theme-alpine {
+  overflow-x: auto;
+}
+
+.reset-filters-btn {
+  background: linear-gradient(90deg, #f70056 0%, #fa8484 100%);
+  color: #fff;
+  font-family: rubik;
+  font-weight: bold;
+  font-size: large;
+  border-radius: 24px;
+  padding: 8px 24px;
+  margin-bottom: 16px;
+  box-shadow: 0 1px 8px rgba(241, 0, 112, 0.08);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+.reset-filters-btn:hover {
+  background: linear-gradient(90deg, #fa8484 0%, #f70056 100%);
+  box-shadow: 0 4px 16px rgba(241, 0, 112, 0.18);
+}
+.my-icon {
+  font-size: 22px;
+  color: #fff;
+}
+
+.details-btn {
+  background: linear-gradient(90deg, #f70056 0%, #fa8484 100%);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s;
+  font-size: 20px;
+  box-shadow: 0 2px 8px;
+  cursor: pointer;
+}
+.details-btn:hover {
+  background: linear-gradient(90deg, #fa8484 0%, #f70056 100%);
+}
+.material-icons {
+  font-size: 22px;
+  color:  #fa8484;
+}
+
+:host ::ng-deep .unpaid-row {
+  color: #f70056 !important;
+  font-weight: bold !important;
+  border-right: 4px solid #f70056 !important;
+}
+
+.paid-row {
+  background: linear-gradient(90deg, #fff0f6 0%, #ffe0e6 100%);
+  color: #fe5490;
+
+}

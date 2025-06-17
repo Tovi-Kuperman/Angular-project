@@ -1,0 +1,12 @@
+<h2 mat-dialog-title>פרטי התלמידה</h2>
+<mat-dialog-content>
+  <p><strong>שם:</strong> {{ data.student.studentFirstName }} {{ data.student.studentastName }}</p>
+  <p><strong>טלפון:</strong> {{ data.student.phone }}</p>
+  <p><strong>מספר זהות:</strong> {{ data.student.id }}</p>
+  <p><strong>שיעור:</strong> {{ data.student.lessonName }}</p>
+  <p><strong>מחיר:</strong> {{ data.student.price }}</p>
+  <p><strong>שולם?</strong> {{ data.student.isPaid ? 'כן' : 'לא' }}</p>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-raised-button mat-dialog-close color="primary">סגור</button>
+</mat-dialog-actions>

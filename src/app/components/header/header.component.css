@@ -1,0 +1,28 @@
+.header-greeting {
+  font-family: 'Rubik', Arial, sans-serif;
+  font-size: 1.5rem;
+    font-weight: semi-bold;
+  color: #6b0000; 
+  margin: 12px 12px 12px 24px;
+  text-align: right;
+  opacity: 0;
+  animation: greetingFlash 1.5s ease-in forwards;
+}
+
+@keyframes greetingFlash {
+  0% {
+    opacity: 0;
+    color: #6b0000; 
+  }
+  40% {
+    opacity: 1;
+    color: #6b0000;
+  }
+  80% {
+    color: #fa8484; 
+  }
+  100% {
+    opacity: 1;
+    color: #f70056; /* ורוד קבוע */
+  }
+}

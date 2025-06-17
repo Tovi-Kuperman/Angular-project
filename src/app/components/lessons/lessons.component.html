@@ -1,0 +1,25 @@
+<div class="galleryheader">
+  <h1>רשימת שיעורים</h1>
+</div>
+  <!-- <button mat-raised-button color="primary" (click)="openAddLessonDialog()">הוסף שיעור</button> -->
+<div class="gallery">
+  <mat-card *ngFor="let lesson of lessons" class="lesson-card" (click)="openLessonDialog(lesson)"  [ngClass]="{ 'active-lesson': isActiveLesson(lesson) }">
+  <mat-icon *ngIf="isActiveLesson(lesson)" class="my-icon" style="vertical-align: middle;">
+  check_circle
+</mat-icon>
+    <mat-card-header>
+      <mat-card-title class="title">{{ lesson.lessonName }}</mat-card-title>
+      <mat-card-subtitle class="subtitle">
+        מורה: {{ lessonService.getTeacherName(lesson.teacherId) }}
+      </mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <p>יום: {{ lesson.day }}</p>
+      <p>שעה: {{ lesson.time }}</p>
+      <p>חדר: {{ lesson.room }}</p>
+      <p>מחיר: {{ lesson.price }} ₪</p>
+      <p>תלמידות: {{ lesson.currentStudents }}/{{ lesson.maxStudents }}</p>
+      <p>סטטוס: {{ lesson.status }}</p>
+    </mat-card-content>
+  </mat-card>
+</div>

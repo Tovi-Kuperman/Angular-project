@@ -1,0 +1,79 @@
+body {
+    direction: rtl;
+}
+
+form {
+	max-width: 400px;
+	margin: 20px auto;
+	padding: 20px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+    font-family: noto-sans-hebrew-unique;
+    font-size: larger;
+}
+
+label {
+	display: block;
+	margin-bottom: 5px;
+    font-family: rubik
+}
+
+input,
+select {
+	width: 100%;
+	padding: 8px;
+	margin-bottom: 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+div {
+	color: rgb(255, 105, 105);
+	margin-bottom: 10px;
+}
+
+button {
+	width: 100%;
+	padding: 10px;
+	background-color: rgb(250, 132, 132);
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+    font-size: larger;
+    font-family: rubik;
+    font-weight: medium;
+}
+button:hover {
+    background-color: rgb(241, 0, 112);
+}
+
+button:disabled {
+	background-color: #ccc;
+}
+
+.header {
+	color: rgb(0, 241, 237);
+	text-align: center;
+}
+
+h3 {
+	text-align: center;
+}
+
+.form-data {
+	text-align: center;
+	margin-top: 20px;
+}
+.form-message {
+    margin-top: 10px;
+    font-weight: bold;
+    color: red; /* For success */
+	font-family: rubik;
+  }
+  
+  .error {
+    color: red; /* For validation errors */
+	font-family: rubik;
+	font-size: medium;
+  }

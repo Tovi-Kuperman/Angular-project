@@ -1,0 +1,30 @@
+.noto-sans-hebrew-unique {
+	font-family: "Noto Sans Hebrew", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: normal;
+	font-style: normal;
+	font-variation-settings:
+	  "wdth" 100;
+  }
+  .logout-btn {
+  background: linear-gradient(90deg, #f70056 0%, #fa8484 100%);
+  color: #fff;
+  font-family: rubik;
+  font-weight: bold;
+  font-size: large;
+  border-radius: 24px;
+  padding: 8px 32px;
+  margin: 16px 0 0 0;
+  box-shadow: 0 2px 8px rgba(241, 0, 112, 0.08);
+  transition: background 0.3s, box-shadow 0.3s;
+  border: none;
+  cursor: pointer;
+  position: fixed;
+  top: 24px;
+  left: 24px;
+  z-index: 1000;
+}
+.logout-btn:hover {
+  background: linear-gradient(90deg, #fa8484 0%, #f70056 100%);
+  box-shadow: 0 4px 16px rgba(241, 0, 112, 0.18);
+}
